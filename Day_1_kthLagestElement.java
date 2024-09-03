@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Day_1kthLagestElement {
+public class Day_1_kthLagestElement {
 
     public static void bubbleSort(int arr[]) {
         for (int i = 0; i < arr.length - 1; i++) {

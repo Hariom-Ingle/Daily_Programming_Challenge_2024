@@ -10,7 +10,7 @@
 
 import java.util.Scanner;
 
-public class Day2_findMid {
+public class Day_2_findMid {
 
     public static double findMid(int arr[]) {
 
