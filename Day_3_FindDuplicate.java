@@ -1,6 +1,6 @@
 public class Day_3_FindDuplicate {
     public static int findDuplicate(int[] arr) {
-        // Phase 1: Tortoise and Hare (Floyd's Algorithm)
+        // step1: Tortoise and Hare (Floyd's Algorithm)
         int slow = arr[0];
         int fast = arr[0];
 
@@ -8,16 +8,15 @@ public class Day_3_FindDuplicate {
         do {
             slow = arr[slow];
             fast = arr[arr[fast]];
-        } while (slow != fast);  // They meet in the cycle
-
-        // Phase 2: Finding the entry point of the cycle
+        } while (slow != fast);   
+        // step2: Finding the entry point of the cycle
         slow = arr[0];
         while (slow != fast) {
             slow = arr[slow];
             fast = arr[fast];
         }
 
-        return slow;  // The duplicate number
+        return slow;  
     }
 
     public static void main(String[] args) {
@@ -41,7 +40,7 @@ public class Day_3_FindDuplicate {
         int[] arr4 = {1, 4, 4, 2, 3};
         System.out.println("Duplicate number: " + findDuplicate(arr4)); 
 
-        // Edge case
+       
         int[] arr5 = new int[100001];
         for (int i = 1; i < 100000; i++) {
             arr5[i] = i;
