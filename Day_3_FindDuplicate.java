@@ -41,10 +41,12 @@ public class Day_3_FindDuplicate {
         System.out.println("Duplicate number: " + findDuplicate(arr4)); 
 
        
+
         int[] arr5 = new int[100001];
         for (int i = 1; i < 100000; i++) {
             arr5[i] = i;
         }
+        
         arr5[100000] = 50000;
         System.out.println("Duplicate number: " + findDuplicate(arr5)); // Output: 50000
     }
